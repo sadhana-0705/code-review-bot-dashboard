@@ -1,0 +1,6 @@
+{
+  "name": "coderefine-ai",
+  "description": "Automated, AI-powered code reviews with AST bug detection, security vulnerability scanning, performance profiling, side-by-side diffs, and CI/CD integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
