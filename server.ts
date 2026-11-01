@@ -1,9 +1,11 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import type { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
-import { optionalAuth, requireAuth, AuthRequest } from './src/middleware/auth.ts';
+import { optionalAuth, requireAuth } from './src/middleware/auth.ts';
+import type { AuthRequest } from './src/middleware/auth.ts';
 import { analyzeCodeWithGemini, askFollowUpQuestion } from './src/lib/gemini.ts';
 import {
   getOrCreateUser,
